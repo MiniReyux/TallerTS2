@@ -38,8 +38,8 @@ function averageCalc(series: Serie[]) {
 
 function cargarCarta(serie: Serie) {
     carta.innerHTML = `
-        <div class="card">
-         <div class="card-header"><img src="${serie.getImagen()}" alt="${serie.getNombre()}" width="473" height=" "></div>
+        <div class="card" style="width:380px">
+         <div class="card-header"><img src="${serie.getImagen()}" alt="${serie.getNombre()}" width=" " height=" "></div>
          <div class="card-title">${serie.getNombre()}</div>
          <div class="card-body">${serie.getInfo()}</div>
          <div class="card-footer"><a href="${serie.getPaginaWeb()}" target="_blank">${serie.getPaginaWeb()}</a></div>
